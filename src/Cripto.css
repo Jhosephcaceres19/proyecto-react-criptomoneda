@@ -12,3 +12,10 @@
 .label{
     color: rgb(82, 204, 241);
 }
+
+.positivo{
+    color: rgb(128, 245, 19);
+}
+.negativo{
+    color: red;
+}

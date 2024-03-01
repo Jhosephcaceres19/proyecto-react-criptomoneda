@@ -27,8 +27,8 @@ function App() {
       <h1 className="titulo">LISTA DE CRIPTOMONEDAS</h1>
       <div className="cripto-container">
           {
-          criptos.map(({id, name, priceUsd, symbol,rank})=>(
-            <Cripto key={id} name={name} priceUsd={priceUsd} symbol={symbol} rank={rank}/>
+          criptos.map(({id, name, priceUsd, symbol,rank, changePercent24Hr})=>(
+            <Cripto key={id} name={name} priceUsd={priceUsd} symbol={symbol} rank={rank} changePercent24Hr={changePercent24Hr}/>
           ))
           }
       </div>
