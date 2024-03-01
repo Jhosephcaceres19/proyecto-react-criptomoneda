@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 import "./App.css"
+import Cripto from "./Cripto"
 
 function App() {
-
   const[criptos,setCriptos]=useState()
   const API_URL="https://api.coincap.io/v2/assets"
   
@@ -23,23 +23,16 @@ function App() {
   if (!criptos) return <span>Cargando...</span>
 
   return (
-    <>
-      <h1>LISTA DE CRIPTOMONEDAS</h1>
-      <ol>
-        {
-          criptos.map(({id, name, priceUsd, symbol})=>(
-            <lu key={id}>
-              Nombre:{name}
-              <br />
-              Precio:{priceUsd}
-              <br />
-              Simbolo:{symbol}
-              <p></p>
-            </lu>
+    <div className="app-container">
+      <h1 className="titulo">LISTA DE CRIPTOMONEDAS</h1>
+      <div className="cripto-container">
+          {
+          criptos.map(({id, name, priceUsd, symbol,rank})=>(
+            <Cripto key={id} name={name} priceUsd={priceUsd} symbol={symbol} rank={rank}/>
           ))
-        }
-      </ol>
-    </>
+          }
+      </div>
+    </div>
   )
 }
 
