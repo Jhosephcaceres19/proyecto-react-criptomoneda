@@ -4,7 +4,7 @@ import "./main.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Pagina404 from "./components/404.jsx";
 import Cuadricula from "./components/Cuadricula.jsx"
-import { Home } from "./Home.jsx";
+import  Home  from "./Home.jsx";
 import { CriptoPage } from "./components/cripto/CriptoPage.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

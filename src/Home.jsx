@@ -1,13 +1,16 @@
 
-import { Link } from 'react-router-dom'
 
-export const Home = () => {
+import { Link } from "react-router-dom"
+import "./Home.css"
+
+const Home = () => {
   return (
-    <>
-    <h1>Hola Bienvenido a EDmarker</h1>
-    <p>Conoce las 100 criptos mas usadas</p>
-    <Link to ="./criptomonedas">Ver criptomonedas</Link>
-    </>
+    <div className="home-container">
+      <h1 className="title">Bienvenido a EDmarket</h1>
+      <p className="subtitle">Cónoce las 100 criptos más usadas</p>
+      <Link to="./criptomonedas" className="link">Ver criptomonedas</Link>
+    </div>
   )
 }
+
 export default Home
