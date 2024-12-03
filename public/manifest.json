@@ -1,0 +1,22 @@
+{
+    "theme_color": "#b6d7a8",
+    "background_color": "#b6d7a8",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Divisas",
+    "short_name": "Cripto",
+    "description": "Cripto divisas",
+    "icons": [
+        {
+            "src": "/icon512_maskable.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon512_rounded.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ]
+}

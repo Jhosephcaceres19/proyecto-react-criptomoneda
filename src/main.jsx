@@ -6,7 +6,7 @@ import Pagina404 from "./components/404.jsx";
 import Cuadricula from "./components/Cuadricula.jsx"
 import  Home  from "./Home.jsx";
 import { CriptoPage } from "./components/cripto/CriptoPage.jsx";
-
+import { register } from './registerServiceWorker';
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
     <BrowserRouter>
@@ -22,4 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       </Routes>
     </BrowserRouter>
   </>
+  
 );
+register();
+
